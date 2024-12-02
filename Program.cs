@@ -9,7 +9,7 @@ using System;
 
     bool diabom = true;
     Console.WriteLine("digite nota 1: ");
-    Console.Read(nota1);
+    //Console.Read(nota1);
 
     for(int i=0; i==5; i++){
 

@@ -12,3 +12,4 @@
 /home/thalles/thac#1/obj/Debug/net8.0/thac#1.pdb
 /home/thalles/thac#1/obj/Debug/net8.0/thac#1.genruntimeconfig.cache
 /home/thalles/thac#1/obj/Debug/net8.0/ref/thac#1.dll
+/home/thalles/thac#1/obj/Debug/net8.0/thac#1.sourcelink.json
