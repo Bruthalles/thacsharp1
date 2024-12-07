@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/thalles/thac#1/thac#1.csproj",
+      "projectUniqueName": "/home/thalles/thac-1/thac#1.csproj",
       "projectName": "thac#1",
-      "projectPath": "/home/thalles/thac#1/thac#1.csproj",
+      "projectPath": "/home/thalles/thac-1/thac#1.csproj",
       "packagesPath": "/home/thalles/.nuget/packages/",
-      "outputPath": "/home/thalles/thac#1/obj/",
+      "outputPath": "/home/thalles/thac-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/thalles/.nuget/NuGet/NuGet.Config"
