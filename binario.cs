@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Reflection.Metadata;
 
 
@@ -17,3 +17,4 @@ class Binario{
     static void main(){
     }
 }
+*/

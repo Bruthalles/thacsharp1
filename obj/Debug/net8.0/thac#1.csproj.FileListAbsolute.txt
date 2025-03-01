@@ -13,3 +13,11 @@
 /home/thalles/thac#1/obj/Debug/net8.0/thac#1.genruntimeconfig.cache
 /home/thalles/thac#1/obj/Debug/net8.0/ref/thac#1.dll
 /home/thalles/thac#1/obj/Debug/net8.0/thac#1.sourcelink.json
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.GeneratedMSBuildEditorConfig.editorconfig
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.AssemblyInfoInputs.cache
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.AssemblyInfo.cs
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.csproj.CoreCompileInputs.cache
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.sourcelink.json
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.dll
+/home/thalles/thacsharp1/obj/Debug/net8.0/refint/thac#1.dll
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.pdb

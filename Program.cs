@@ -1,32 +1,29 @@
-﻿
-using System;
+﻿using System;
 
-    string msg01 = "hello world";
-    string msg02 = "bye world";
-    float nota1 = 0;
-    float nota2 = 0;
-    float media = nota1 + nota2 / 2;
 
-    bool diabom = true;
-    Console.WriteLine("digite nota 1: ");
-    //Console.Read(nota1);
 
-    for(int i=0; i==5; i++){
+class Cliente{
 
-        if(diabom){
-            Console.WriteLine(msg01);
-            diabom = !diabom;
-            
-        }
-        else{
-            Console.WriteLine(msg02);
-            diabom = !diabom;
-            
-        }
+    string nome = "";
+    int idade = 0 ;
+    static void Main(string[] args){
 
+         /* function convertint(int atributo){
+            atributo = Console.WriteLine(Convert.ToString(atributo));
+            return atributo;
+        }  */
+        
+        Cliente pessoa = new Cliente();
+
+        Console.WriteLine("digite nome: ");
+        pessoa.nome = Console.ReadLine();
+        
+        
+        Console.WriteLine("digite sua idade: ");
+        
+        Convert.ToString(pessoa.idade);
+        pessoa.idade =Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("olá "+ pessoa.nome + ", com " + pessoa.idade + " anos" );
     }
-
-            
-
-
-    
+}
