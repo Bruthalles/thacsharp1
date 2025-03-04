@@ -25,5 +25,7 @@ class Cliente{
         pessoa.idade =Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("olá "+ pessoa.nome + ", com " + pessoa.idade + " anos" );
+
+        Console.WriteLine("hello");
     }
 }
