@@ -30,10 +30,16 @@ namespace Binario{
             }
             Console.Write("Seu número em binário é: ");
 
-            foreach(int i in restos.Reverse()){
-                Console.Write(restos[i]);
+            foreach(int n in restos.Reverse()){
+                Console.Write(n);
             }
-            
+        Console.WriteLine("\n(((((((((((((((())))))))))))))))");
+        Console.Write("Deseja converter novamente ? S/N: ");
+        char resposta = Convert.ToChar(Console.ReadLine().Trim().ToUpper());
+
+        if(resposta == 'S'){
+            ConvertToBit.Run();
+        }
             return 0;
         }
     }

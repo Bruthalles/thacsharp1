@@ -26,7 +26,6 @@ class Cliente{
 
         Console.WriteLine("olá "+ pessoa.nome + ", com " + pessoa.idade + " anos" ); */
         ConvertToBit.Run();
-        
     }
 }
 }
