@@ -21,3 +21,10 @@
 /home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.dll
 /home/thalles/thacsharp1/obj/Debug/net8.0/refint/thac#1.dll
 /home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.pdb
+/home/thalles/thacsharp1/bin/Debug/net8.0/thac#1
+/home/thalles/thacsharp1/bin/Debug/net8.0/thac#1.deps.json
+/home/thalles/thacsharp1/bin/Debug/net8.0/thac#1.runtimeconfig.json
+/home/thalles/thacsharp1/bin/Debug/net8.0/thac#1.dll
+/home/thalles/thacsharp1/bin/Debug/net8.0/thac#1.pdb
+/home/thalles/thacsharp1/obj/Debug/net8.0/thac#1.genruntimeconfig.cache
+/home/thalles/thacsharp1/obj/Debug/net8.0/ref/thac#1.dll
