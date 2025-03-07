@@ -3,6 +3,23 @@ using System.Linq;
 
 namespace Binario{
     public class ConvertToBit{
+
+        //pede confirmação para reiniciar o programa
+        public static int Loop(){
+            Console.Write("Deseja converter novamente ? S/N: ");
+
+            /*evita erro de exceção sem tratamento, ao colocar mais de um caractere. ou escolhendo a opção N, o programa continuava
+            */
+            char resposta = char.ToUpper(Console.ReadKey().KeyChar);
+
+            if(resposta == 'S'){
+                ConvertToBit.Run();
+            }
+            else if(resposta != 'S'){
+                Console.WriteLine("\nObrigado pela experiência:)");   
+            }
+            return 0;
+        }
         public static int Run(){
             //conversão de decimal para binario sem usar pilha nem ponteiros
 
@@ -20,6 +37,8 @@ namespace Binario{
 
             if (num < 0 || num > max){
                 Console.WriteLine("não é possivel converter esse numero!");
+                ConvertToBit.Loop();
+                
             }
 
             while(num > 0 ){
@@ -28,20 +47,17 @@ namespace Binario{
                     num = num / 2;
                 } 
             }
-            Console.Write("Seu número em binário é: ");
+            if(num >0 || num <= max ){
+                Console.Write("Seu número em binário é: ");
 
-            //é necessário inverter porque ele guarda os restos ao contrário
-            foreach(int n in restos.Reverse()){
-                Console.Write(n);
+                //é matemáticamente necessário inverter após o processo de divisão 
+                foreach(int n in restos.Reverse()){
+                    Console.Write(n);
+                }
             }
         Console.WriteLine("\n(((((((((((((((())))))))))))))))");
-        Console.Write("Deseja converter novamente ? S/N: ");
-        char resposta = Convert.ToChar(Console.ReadLine().Trim().ToUpper());
-
-        if(resposta == 'S'){
-            ConvertToBit.Run();
-        }
-            return 0;
+        ConvertToBit.Loop();
+        return 0; 
         }
     }
 }
