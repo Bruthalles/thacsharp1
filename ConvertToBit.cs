@@ -23,26 +23,23 @@ namespace Binario{
         public static int Run(){
             //conversão de decimal para binario sem usar pilha nem ponteiros
 
+            //definindo numero maximo de bits
+            int limiteBit = 10;
 
-            /*cada indice equivale a um bit do numero decimal.
-            com 4 bits o maior numero possivel é 15
-            */
-            int[] restos = new int[4];
+            int[] restos = new int[limiteBit];
 
             //valor decimal maximo para calculo:
-            int max = 15;
+            int max = 1023;
 
-            Console.Write("escolha um numero de 1 à 15 para converter em binário: ");
+            Console.Write("\nEscolha um numero de 1 à 1023 para converter em binário: ");
             int num = Convert.ToInt32(Console.ReadLine());
 
             if (num < 0 || num > max){
-                Console.WriteLine("não é possivel converter esse numero!");
+                Console.WriteLine("\nNÃO É POSSÍVEL CONVERTER ESSE NÚMERO!");
                 ConvertToBit.Loop();
-                
             }
-
             while(num > 0 ){
-                for(int i = 0; i < 4; i++){
+                for(int i = 0; i < limiteBit; i++){
                     restos[i] = num % 2;
                     num = num / 2;
                 } 
