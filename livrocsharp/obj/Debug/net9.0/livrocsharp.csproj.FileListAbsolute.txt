@@ -1,0 +1,15 @@
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.AssemblyInfoInputs.cache
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.AssemblyInfo.cs
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.csproj.CoreCompileInputs.cache
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.sourcelink.json
+/home/thalles/repositories/thacsharp1/livrocsharp/bin/Debug/net9.0/livrocsharp
+/home/thalles/repositories/thacsharp1/livrocsharp/bin/Debug/net9.0/livrocsharp.deps.json
+/home/thalles/repositories/thacsharp1/livrocsharp/bin/Debug/net9.0/livrocsharp.runtimeconfig.json
+/home/thalles/repositories/thacsharp1/livrocsharp/bin/Debug/net9.0/livrocsharp.dll
+/home/thalles/repositories/thacsharp1/livrocsharp/bin/Debug/net9.0/livrocsharp.pdb
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.dll
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/refint/livrocsharp.dll
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.pdb
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/livrocsharp.genruntimeconfig.cache
+/home/thalles/repositories/thacsharp1/livrocsharp/obj/Debug/net9.0/ref/livrocsharp.dll
