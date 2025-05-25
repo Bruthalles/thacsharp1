@@ -3,26 +3,26 @@ using System.Linq;
 using static System.Console;
 
 namespace cap3{
-    class FuncoesString
-    {
-        static void Main(string[] args)
-        {
+    class FuncoesString{
+        static void Main(string[] args){
             string nome = "      thalles        ";
             string sobrenome = "     roberto    ";
             string full_name = nome + sobrenome;
             string full_name_trim = full_name.Trim();
 
-            WriteLine("-----Funções de texto-----");
-            WriteLine("TRIM remove espaços antes e depois da string");
+            WriteLine("-----Funções de texto-----\n");
+            WriteLine("Trim remove espaços antes e depois da string\n");
             WriteLine($"Nome original: {full_name}.");
-            WriteLine($"Nome sem espaço: {full_name_trim}.");
+            WriteLine($"Nome sem espaço: {full_name_trim}.\n");
 
-            WriteLine("Length retorna a quantidade de caracteres");
+            WriteLine("Length retorna a quantidade de caracteres\n");
             WriteLine($"Tamanho original: {full_name.Length}");
             WriteLine($"Tamanho sem espaços: {full_name_trim.Length}\n");
 
             string nomeUpper = "AIRTON SENNA";
             string nomeLower = "airton senna";
+
+            WriteLine($"Comparando strings: ({nomeUpper}) e ({nomeLower})");
 
             //comparação 1
             if (nomeUpper == nomeLower)
@@ -38,11 +38,21 @@ namespace cap3{
 
             //comparação 3
             if (nomeUpper.Equals(nomeLower, StringComparison.OrdinalIgnoreCase))
-                WriteLine("3 - nomes iguais");
+                WriteLine("3 - nomes iguais\n");
             else
-                WriteLine("3 - nomes diferentes");
+                WriteLine("3 - nomes diferentes\n");
 
+            WriteLine("Remove - extrai x caracteres a partir da esquerda da string\n");
+            WriteLine($"Texto esquerdo: {nome.Remove(9)}.");
+
+            string[] nomes = { "Silvio Santos", "José Bezerra", "Getúlio Vargas" };
+
+            WriteLine($"Capturando apenas o primeiro nome das pessoas:\n{nomes[0]}\n{nomes[1]}\n{nomes[2]}\n");
+
+            WriteLine("Resultado:\n");
+            foreach (var n in nomes){
+                WriteLine($"{n.Remove(n.IndexOf(" "))}");
+            }
         }
     }    
-    
 }
