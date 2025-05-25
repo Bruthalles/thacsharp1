@@ -4,20 +4,23 @@ using static System.Console;
 
 namespace cap3{
     class FuncoesString{
-        static void Main(string[] args){
+        static void Main(string[] args)
+        {
+            string empresa = "Microsoft Corporation";
+
             string nome = "      thalles        ";
             string sobrenome = "     roberto    ";
-            string full_name = nome + sobrenome;
-            string full_name_trim = full_name.Trim();
+            string fullName = nome + sobrenome;
+            string fullName_trim = fullName.Trim();
 
             WriteLine("-----Funções de texto-----\n");
             WriteLine("Trim remove espaços antes e depois da string\n");
-            WriteLine($"Nome original: {full_name}.");
-            WriteLine($"Nome sem espaço: {full_name_trim}.\n");
+            WriteLine($"Nome original: {fullName}.");
+            WriteLine($"Nome sem espaço: {fullName_trim}.\n");
 
             WriteLine("Length retorna a quantidade de caracteres\n");
-            WriteLine($"Tamanho original: {full_name.Length}");
-            WriteLine($"Tamanho sem espaços: {full_name_trim.Length}\n");
+            WriteLine($"Tamanho original: {fullName.Length}");
+            WriteLine($"Tamanho sem espaços: {fullName_trim.Length}\n");
 
             string nomeUpper = "AIRTON SENNA";
             string nomeLower = "airton senna";
@@ -50,9 +53,16 @@ namespace cap3{
             WriteLine($"Capturando apenas o primeiro nome das pessoas:\n{nomes[0]}\n{nomes[1]}\n{nomes[2]}\n");
 
             WriteLine("Resultado:\n");
-            foreach (var n in nomes){
+            foreach (var n in nomes)
+            {
                 WriteLine($"{n.Remove(n.IndexOf(" "))}");
             }
+
+            WriteLine("\nReplace substitui conteúdos da string\n");
+
+            WriteLine($"Texto atual: {empresa}");
+            string novaEmpresa = empresa.Replace("Microsoft", "Google");
+            WriteLine($"Depois do replace: {novaEmpresa}");
         }
     }    
 }
