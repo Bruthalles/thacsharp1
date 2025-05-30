@@ -3,7 +3,13 @@ using System.IO;
 using serializacao;
 namespace dia5{
     class Dia5{
-        static void Main(string[] args){
+
+        static void LoadBar(){
+            //string simbol = "#";
+            // funçao para congelar o programa
+            //funcao para editar impressao 
+        }
+        static void CriandoArquivo(){
 
             //saindo de bin/Debug/net9.0/ para a raiz
             string caminhoProjeto = Directory.GetParent(Environment.CurrentDirectory)?.Parent?.Parent?.FullName;
@@ -11,8 +17,6 @@ namespace dia5{
             string nomeFile = "lista.txt";
 
             string caminhoArquivo = Path.Combine(caminhoProjeto,nomeFile);
-
-            WriteLine($"Arquivo {nomeFile} criado em {caminhoArquivo}");
 
             List<string> tarefas = new List<string>();
 
@@ -26,16 +30,21 @@ namespace dia5{
                 }
             }while( input != "fim");
 
-            if(File.Exists(caminhoArquivo)){
+            if(File.Exists(caminhoArquivo) == false){
+                WriteLine("Erro inexperado ao criar arquivo");
+            }
 
-                using (StreamWriter writer = new StreamWriter(caminhoArquivo,append:true)){
-                    foreach(var task in tarefas){
-                        writer.WriteLine($"- {task}");
-                    }
+            WriteLine($"Arquivo {nomeFile} criado em {caminhoArquivo}");
+            using (StreamWriter writer = new StreamWriter(caminhoArquivo,append:true)){
+                foreach(var task in tarefas){
+                    writer.WriteLine($"- {task}");
                 }
             }
             WriteLine("Lista de tarefas salva!");
+        }
+        static void Main(string[] args){
 
+            //CriandoArquivo();
             JSerial.PessoaSerial();
         }
     }
