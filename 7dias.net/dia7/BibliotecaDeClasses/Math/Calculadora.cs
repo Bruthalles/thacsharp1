@@ -1,7 +1,7 @@
 using static System.Console;
 
 namespace Calculadora{
-    public class Calc{
+    public static class Calc{
         public static void Somar(double a, double b){
             double sum = a + b;
             WriteLine($"Resultado de {a} + {b} = {sum}");
