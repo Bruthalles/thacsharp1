@@ -1,0 +1,29 @@
+﻿Sistema de SuperMercado em C#
+
+desenvolvido por: Thalles Brumatti
+
+
+
+Objetivo:
+	
+Projeto pessoal criado para melhorar:
+    • Práticas com modelagem de sistemas.
+    • Gestão de projetos e documentação.
+    • Desenvolvimento em .NET Backend.
+    • Boas práticas de programação.
+    • Estrutura de um sistema .NET.
+
+Requisitos:
+	
+	Funcionais:
+		Simular um sistema de mercado contendo dois principais atores:
+
+        ◦ Gerente (acesso através de um cadastro seguro): Responsável por cadastrar produtos.
+
+        ◦ Clientes:  Realiza operações com os produtos em estoque. 
+		
+		O sistema deve salvar todos os produtos e clientes em forma de 		“nota” json ou qualquer outra maneira de salvamento local exceto 		bancos de dados. Salvando também cada compra com seu 			respectivo 	cliente e seus dados em outra nota e desenvolver 			operações de atualização do estoque.
+
+		A apresentação ao usuário deve ser feita em uma janela inicial 			que pede o nível de acesso (cliente ou administrador), direciona 		para sua tela desejada com suas funções, e dando ao usuário a 			opção de navegar entre as telas permitidas.
+
+		O administrador pode criar clientes, porém clientes não podem 		criar produtos. Ao final de uma compra, exibir os dados em forma 		de nota fiscal digital.	
