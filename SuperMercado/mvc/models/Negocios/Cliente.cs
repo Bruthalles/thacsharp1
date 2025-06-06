@@ -1,5 +1,5 @@
 namespace cliente{
-    class Cliete{
+    public class Cliente{
         private string nome;
         public string Nome{
             get{return nome;}

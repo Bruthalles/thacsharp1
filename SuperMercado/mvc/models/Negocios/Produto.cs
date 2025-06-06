@@ -1,5 +1,5 @@
 ﻿namespace absProduto{
-    class Produto{
+    public class Produto{
         private string nome;
         private double preco;
         private string validade;
@@ -8,19 +8,19 @@
         public string Nome{
             get{return Nome;}
             set{if(!string.IsNullOrEmpty(value)){
-                    nome = value;
+                    Nome = value;
                 }
                 Console.WriteLine("Nome não pode ser nulo");
             }
         }
         public double Preco{
-            get{return Math.Round(preco,2);}
-            set{preco = value;}
+            get{return Math.Round(Preco,2);}
+            set{Preco = value;}
         }
         public string Validade{
-            get{return validade;}
+            get{return Validade;}
             set{if(!string.IsNullOrWhiteSpace(value)){
-                validade = value;
+                Validade = value;
                 }
                 Console.WriteLine("Validade não pode ser nulo");
             }
