@@ -1,0 +1,21 @@
+@startuml usecase
+left to right direction
+skinparam actorStyle awesome
+usecase "se cadastrar" as cadastro
+
+:Gerente: --> cadastro
+:Cliente: --> cadastro
+
+package TelaGerencia{
+    usecase "cadastrar produto" as cadProd
+    usecase "cadastrar cliente" as cadClient
+}
+
+package TelaCliente{
+    usecase "comprar produto" as comprar
+}
+
+cadastro --> TelaGerencia
+cadastro --> TelaCliente
+
+@enduml
