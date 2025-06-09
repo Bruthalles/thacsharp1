@@ -1,0 +1,35 @@
+@startuml seq
+actor Usuario
+participant Sistema
+
+Usuario -> Sistema: Solicita login
+activate Sistema
+Sistema -> Sistema: Validar credenciais
+deactivate Sistema
+
+alt Usuário é gerente e autorizado
+    Sistema -> Usuario: Mostrar painel gerente
+    
+else Usuário é cliente e autorizado
+    Sistema -> Usuario: Mostrar painel cliente
+    
+else Usuário não autorizado
+    Sistema -> Usuario: Mostrar mensagem de acesso negado
+    
+end
+
+alt Usuário é Cliente
+    Usuario -> Sistema : cliente compra produto
+    Sistema --> Usuario : emitir nota fiscal
+    
+else Gerente cadastra produtos
+    Usuario -> Sistema : gerente cadastra produto
+    Sistema --> Usuario : retorna lista produtos
+    
+else Gerente cadastra cliente
+    Usuario -> Sistema : cadastrar cliente 
+    Sistema --> Usuario : retorna lista clientes
+    
+end 
+
+@enduml
