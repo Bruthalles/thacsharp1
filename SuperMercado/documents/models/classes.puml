@@ -1,0 +1,29 @@
+@startuml Classes 
+class Cliente{
+    - Nome :string 
+    + Nome(){get;set;}
+}
+class Produto{
+    - Nome: string
+    - Preco: decimal
+    - Quantidade: int
+    - Validade: DateTime
+
+    + Nome(){get;set}
+    + Preco(){get;set}
+    + Quantidade(){get;set}
+    + Validade(){get;set}
+}
+class Cadastrar{
+    + Produto(){CriarJson()}
+    + Cliente(){CriarJson()}
+
+}
+
+class GetPath{
+    - basePath : string
+    - raizProjeto : string
+    + caminhoArquivo : string
+   + CriarJson(nomeArquivo : string, conteudo List<string>)
+}
+@enduml
