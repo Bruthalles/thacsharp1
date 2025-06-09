@@ -1,7 +1,7 @@
 ﻿namespace absProduto{
     public class Produto{
         private string nome;
-        private double preco;
+        private decimal preco;
         private string validade;
         private int quantidade;
 
@@ -17,7 +17,7 @@
             get{return Math.Round(Preco,2);}
             set{Preco = value;}
         }
-        public string Validade{
+        public decimal Validade{
             get{return Validade;}
             set{if(!string.IsNullOrWhiteSpace(value)){
                 Validade = value;
