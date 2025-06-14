@@ -9,6 +9,6 @@ namespace gerente{
 
         public string Nome{get;set;}
         public string Id{get;set;}
-        public string senha{get;set;}
+        public string Senha{get;set;}
     }
 }
