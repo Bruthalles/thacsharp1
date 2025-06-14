@@ -1,4 +1,7 @@
 namespace cliente{
+    /// <summary>
+    /// Cria um cliente com atributo nome
+    /// </summary>
     public class Cliente{
         private string nome;
         public string Nome{

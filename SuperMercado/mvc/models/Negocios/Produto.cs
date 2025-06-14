@@ -2,7 +2,8 @@
     public class Produto{
         private string nome;
         private decimal preco;
-        private string validade;
+        private DateTime validade;
+        private string validadeString;
         private int quantidade;
 
         public string Nome{
@@ -17,13 +18,10 @@
             get{return Math.Round(Preco,2);}
             set{Preco = value;}
         }
-        public decimal Validade{
-            get{return Validade;}
-            set{if(!string.IsNullOrWhiteSpace(value)){
-                Validade = value;
-                }
-                Console.WriteLine("Validade não pode ser nulo");
-            }
+        public string getValidade(int ano,int mes , int dia){
+            validade = new DateTime(ano,mes,dia);
+            validadeString = Convert.ToString(validade);
+            return validadeString;
         }
         public int Quantidade{get;set;}
     }
