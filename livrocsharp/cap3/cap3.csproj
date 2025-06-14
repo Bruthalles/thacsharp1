@@ -5,7 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <StartupObject>cap3.FuncoesString</StartupObject>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
 </Project>
