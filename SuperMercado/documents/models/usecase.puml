@@ -3,8 +3,8 @@ left to right direction
 skinparam actorStyle awesome
 usecase "se cadastrar" as cadastro
 
-:Gerente: --> cadastro
-:Cliente: --> cadastro
+:Gerente: -right-> Cliente
+:Cliente: -- cadastro
 
 package TelaGerencia{
     usecase "cadastrar produto" as cadProd
