@@ -3,6 +3,15 @@ class Cliente{
     - Nome :string 
     + Nome(){get;set;}
 }
+class Gerente{
+    - Nome :string
+    - Identificador: string
+    - Senha : string
+
+    + Nome(){get;set;}
+    + Identificador(){get;set}
+    + Senha(){get;set}
+}
 class Produto{
     - Nome: string
     - Preco: decimal
