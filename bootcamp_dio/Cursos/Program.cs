@@ -9,12 +9,29 @@ using System.IO;
 namespace program{
     public class Program{
 
-        public static string[] linhas = File.ReadAllLines(ObterCaminhoArquivo("textoleitura.txt"));
+        private static string caminhoFinal; 
+        public static string[] linhas;
         public static void Main(string[] args){
+            try{
+                caminhoFinal = ObterCaminhoArquivoDoFilhoCompleto(nomePai:"/files/",nomeArquivo:"textoleitura.txt");
+                linhas = File.ReadAllLines(caminhoFinal);
 
-            foreach(string linha in linhas){
-                WriteLine(linha);
+                foreach(string linha in linhas){
+                    WriteLine(linha);
+                }
             }
+            catch(FileNotFoundException ex){
+                WriteLine($"Ocorreu um erro. Arquivo nao encontrado {ex.Message}");
+                WriteLine("Verifique o nome do arquivo.");
+            }
+            catch(DirectoryNotFoundException ex){
+                WriteLine($"Ocorreu um erro: Diretorio nao encontrado {ex.Message}");
+                WriteLine("Verifique o nome da pasta pai.");
+            }
+            catch(Exception ex){
+                WriteLine($"Ocorreu uma excessão inesperada {ex.Message}");
+            }
+            WriteLine("Não foi possivel ler o arquivo, e o programa terminou.");
         }
     }
 }
