@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Globalization;
 using static System.Console;
 using functrim;
 using funclength;
@@ -11,9 +11,12 @@ using funcNullEmpty;
 using funcDates;
 
 namespace cap3{
-    class FuncoesString{
+    class Program{
+        public static decimal money = 8234552M;
         static void Main(string[] args){
 
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+            
             WriteLine("\n-----Funções de texto-----\n");
 
             TrimClass.fTrim();
@@ -26,6 +29,9 @@ namespace cap3{
             NullEmptyClass.fNullEmpty();
             DatesClass.fDates();
             
+            //C de currency
+            WriteLine($"{money:C}");
+            WriteLine(money.ToString("C",CultureInfo.CreateSpecificCulture("en-US")));
         }
     }    
 }
