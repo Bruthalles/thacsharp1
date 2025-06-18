@@ -14,14 +14,25 @@ namespace getpath{
     /// utiliza arquivo na pasta raiz do projeto 
     /// </summary>
     /// <param name="nomeArquivo">escolha um nome e extensão</param>
-    /// <returns>caminho completo</returns>
-    public static string ObterCaminhoArquivo(string nomeArquivo){
+    /// <returns>caminho completo "/" + nomeArquivo</returns>
+    public static string ObterCaminhoArquivoRaiz(string nomeArquivo){
         caminhoArquivo = $"{raizProjeto}/{nomeArquivo}";
+        return caminhoArquivo;
+        }
+    /// <summary>
+    /// lê arquivo salvo em qualquer subdiretório.
+    /// necessário uso das barras: /
+    /// </summary>
+    /// <param name="nomePai">/pastas/intermediarias/</param>
+    /// <param name="nomeArquivo">"arquivofinal".sua extensão</param>
+    /// <returns></returns>
+    public static string ObterCaminhoArquivoDoFilhoCompleto(string nomePai, string nomeArquivo){
+        caminhoArquivo = $"{raizProjeto}{nomePai}{nomeArquivo}";
         return caminhoArquivo;
         }
 
     /// <summary>
-    /// cria arquivo na raiz do projeto
+    /// cria arquivo na raiz do projeto 
     /// </summary>
     /// <param name="nomeArquivo">nome do arquivo para criar</param>
     /// <param name="conteudo">objetos convertidos para lista que salva no json</param>
