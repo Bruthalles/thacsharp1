@@ -1,6 +1,6 @@
 using static System.Console;
 
-namespace models.pessoa{
+namespace bootcamp.models{
     public class Pessoa{
 
         public Pessoa(){}
@@ -43,7 +43,7 @@ namespace models.pessoa{
                 _idade = value;
             } 
         }
-        public void Apresentar(){
+        public virtual void Apresentar(){
             WriteLine($"Nome: {NomeCompleto}, Idade: {Idade}");
         }
     }

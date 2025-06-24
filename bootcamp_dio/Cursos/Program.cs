@@ -1,6 +1,5 @@
-﻿using models.pessoa;
-using models.curso;
-using static getpath.GetPath;
+﻿using bootcamp.models;
+using static ManipuladorArquivos.ManipuladorArquivos;
 using static System.Console;
 using System;
 using System.Linq;
@@ -12,6 +11,25 @@ namespace program{
         private static string caminhoFinal; 
         public static string[] linhas;
         public static void Main(string[] args){
+
+            Queue<int> fila = new Queue<int>();
+            Stack<int> pilha = new Stack<int>();
+
+            fila.Enqueue(23);
+            pilha.Push(10);
+            fila.Dequeue();
+            pilha.Pop();
+
+            Dictionary<int,string> estados = new Dictionary<int, string>();
+            estados.Add(21,"RJ");
+            estados.Add(11,"SP");
+            estados.Add(38,"BA");
+            estados.Add(55,"BR");
+            estados[38] = "MG";
+            estados.Remove(55);
+            estados.ContainsKey(22);
+            estados.ContainsValue("RJ");
+
             try{
                 caminhoFinal = ObterCaminhoArquivoDoFilhoCompleto(nomePai:"/files/",nomeArquivo:"textoleitura.txt");
                 linhas = File.ReadAllLines(caminhoFinal);
@@ -29,9 +47,11 @@ namespace program{
                 WriteLine("Verifique o nome da pasta pai.");
             }
             catch(Exception ex){
-                WriteLine($"Ocorreu uma excessão inesperada {ex.Message}");
+                WriteLine($"Ocorreu uma exceção inesperada {ex.Message}");
             }
-            WriteLine("Não foi possivel ler o arquivo, e o programa terminou.");
+            finally{
+                WriteLine("fim do programa.");
+            }
         }
     }
 }

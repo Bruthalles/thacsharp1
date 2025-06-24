@@ -1,6 +1,6 @@
 
-namespace getpath{
-    public static class GetPath{
+namespace ManipuladorArquivos{
+    public static class ManipuladorArquivos{
 
     //diretorio onde fica o executavel - /Projeto/bin/Debug/net9.0/
     private static string basePath = AppContext.BaseDirectory;
