@@ -1,0 +1,4 @@
+Criar classe pessoa e suíte e uma classe reserva interagindo com as outras duas
+
+Regra de negócio:
+se a quantidade de dias da reserva for maior ou igual a 10 dias, obtém 10% de desconto.
