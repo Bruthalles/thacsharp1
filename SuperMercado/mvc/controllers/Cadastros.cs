@@ -1,43 +1,52 @@
 using static System.Console;
-using absProduto;
-using cliente;
-using static getpath.GetPath;
+using models.Negocios;
+using static ManipuladorArquivos.ManipuladorArquivos;
 using System.Text.Json;
 using System.Collections.Generic;
 using System.IO;
 
-namespace cadastro{
+namespace Mercado.Controllers.Cadastros{
     public class Cadastrar{
-        public static void Produto(){
+
+        //Cadastrando Produto
+        public static void newProduto(){
             
-            Produto produto= new Produto();
+            Produto produto; 
             List<string> estoque = new List<string>();
             do{
 
             Write("\nDigite nome do novo produto ou 'fim' para sair do cadastro: ");
             string input = ReadLine();
             if(input == "fim")break;
-
+            
             else{
-                produto.Nome = input;
-                Write($"\nDigite Preço de {produto.Nome}: ");
-                produto.Preco = double.Parse(ReadLine());
+                produto = new Produto();
 
-                Write($"\nDigite validade de {produto.Nome}: ");
-                produto.Validade = ReadLine();
+                if(!produto.DefinirNome(input)) continue;
+
+                Write($"\nDigite Preço de {produto.Nome}: ");
+
+                if(!produto.DefinirPreco(Convert.ToDecimal(ReadLine()))) continue;
+                
+                Write($"\nDigite validade de {produto.Nome} AAAA/MM/DD: ");
+
+                if(!produto.DefinirValidade(ReadLine())) continue;
 
                 Write($"\nDigite Quantidade disponível para {produto.Nome}: ");
-                produto.Quantidade = int.Parse(ReadLine());
+                
+                if(!produto.DefinirQuantidade(int.Parse(ReadLine()))) continue;
                 
                 string json = JsonSerializer.Serialize(produto);
                 estoque.Add(json);
                 }
 
             }while(true);
-            CriarJson("estoque",estoque);
+            string arquivoProdutos = ObterCaminhoArquivoDoFilhoCompleto("/mvc/models/data/","estoque.json");
+            CriarArquivo(arquivoProdutos,estoque);
 
         }
-        public static void Cliente(){
+        //Cadastrando novo Cliente
+        public static void newCliente(){
 
             Cliente cliente = new Cliente();
             List<string> lstCustomers = new List<string>();
@@ -48,7 +57,39 @@ namespace cadastro{
             string jsonCliente = JsonSerializer.Serialize(cliente);
             lstCustomers.Add(jsonCliente);
 
-            CriarJson("clientes",lstCustomers);
+            string arquivoClientes = ObterCaminhoArquivoDoFilhoCompleto("/mvc/models/data/","clientes.json");
+            CriarArquivo(arquivoClientes,lstCustomers);
+        }
+        //Cadastrando novo Gerente
+        public static void newGerente(){
+            Gerente admin = new Gerente();
+            List<string> lstAdmin = new List<string>();
+
+            Write($"\nCadastre nome do gerente: ");
+            admin.Nome = ReadLine();
+
+            Write($"\nCadastre o ID do gerente {admin.Nome}: ");
+            admin.Id = ReadLine();
+
+            Write($"\nCadastre uma senha para o gerente {admin.Nome}: ");
+            admin.Senha = ReadLine();
+
+            string jsonGerente = JsonSerializer.Serialize(admin);
+            lstAdmin.Add(jsonGerente);
+
+            string arquivoGerentes = ObterCaminhoArquivoDoFilhoCompleto("/mvc/models/data/","gerentes.json");
+            CriarArquivo(arquivoGerentes,lstAdmin);
+        }
+
+        //Gerando a compra
+        public void Comprar(){
+
+            try{
+                using(StreamReader reader = new StreamReader(ObterCaminhoArquivoDoFilhoCompleto("mvc/models/data/","estoque.json"))){
+
+                }
+            }
+            catch{}
         }
     }
 }
