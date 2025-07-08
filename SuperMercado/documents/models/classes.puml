@@ -1,17 +1,18 @@
 @startuml Classes 
-class Cliente{
-    - Nome :string 
-    + Nome(){get;set;}
+
+interface Usuario{
+    + Nome{get;set;}
 }
 class Gerente{
-    - Nome :string
     - Identificador: string
     - Senha : string
-
-    + Nome(){get;set;}
     + Identificador(){get;set}
     + Senha(){get;set}
 }
+
+Cliente -up-> Usuario
+Gerente -up-> Usuario
+
 class Produto{
     - Nome: string
     - Preco: decimal
@@ -30,9 +31,9 @@ class Cadastrar{
 }
 
 class GetPath{
-    - basePath : string
-    - raizProjeto : string
-    + caminhoArquivo : string
+    - basePath : string <<diretorio de execução /Debug/net9.0>>
+    - raizProjeto : string <<"/">>
+    + caminhoArquivo : string <<raizProjeto + nomeArquivo>>
    + CriarJson(nomeArquivo : string, conteudo List<string>)
 }
 @enduml
