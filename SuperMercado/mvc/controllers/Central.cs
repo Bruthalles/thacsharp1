@@ -1,24 +1,27 @@
 using static System.Console;
-using cadastro;
+using Mercado.Controllers.Cadastros;
 
 namespace centralCadastro{
     public static class Central{
 
         public static void Print(){
             
-            Write("\nPara cadastrar produto digite 1: ");
-            Write("\nPara cadastrar cliente digite 2: ");
+            Write("\nDigite 1 para entrar como Gerente: ");
+            Write("\nDigite 2 para entrar como Cliente: ");
 
             char choose = Convert.ToChar(ReadLine());
 
-            if(choose == '1'){
-                Cadastrar.Produto();
-            }
-            else if(choose =='2'){
-                Cadastrar.Cliente();
-            }
-            else{
-                WriteLine("Opção inválida");
+            switch(choose){
+                case '1': 
+                    Cadastrar.newGerente();
+                    Cadastrar.newProduto();
+                    break;
+                case '2':
+                    Cadastrar.newCliente();
+                    break;
+                default:
+                    WriteLine("Opção inválida");
+                    break;
             }
         }
     }
