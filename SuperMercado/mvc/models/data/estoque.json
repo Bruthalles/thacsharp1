@@ -1,0 +1,4 @@
+System.Collections.Generic.List`1[System.String]
+{"Nome":"arroz","Preco":50,"Quantidade":100}
+{"Nome":"batata palha","Preco":7,"Quantidade":38}
+{"Nome":"arroz","Preco":90,"Validade":"9/12/2026 12:00:00\u202FAM","Quantidade":3}
