@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMercado", "SuperMercad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocios", "mvc\models\Negocios\Negocios.csproj", "{A8E26884-3046-41C9-BEE4-127E6DC7B1D0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mvc", "mvc", "{8F58A1E2-D159-4ED2-AB9B-D9068D6F8E80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controllers", "mvc\controllers\controllers.csproj", "{944A142A-3951-4F50-B1B1-C7C4C9170845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,11 +28,18 @@ Global
 		{A8E26884-3046-41C9-BEE4-127E6DC7B1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8E26884-3046-41C9-BEE4-127E6DC7B1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8E26884-3046-41C9-BEE4-127E6DC7B1D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944A142A-3951-4F50-B1B1-C7C4C9170845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944A142A-3951-4F50-B1B1-C7C4C9170845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944A142A-3951-4F50-B1B1-C7C4C9170845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944A142A-3951-4F50-B1B1-C7C4C9170845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3846D5A3-1ABB-4DDC-8B3A-EF41F3DCB0B1}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{944A142A-3951-4F50-B1B1-C7C4C9170845} = {8F58A1E2-D159-4ED2-AB9B-D9068D6F8E80}
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,4 @@
-﻿using cadastro;
-using centralCadastro;
+﻿using centralCadastro;
 
 namespace Mercado{
     class PRogram{
