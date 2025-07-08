@@ -1,11 +1,11 @@
-namespace cliente{
+namespace models.Negocios{
     /// <summary>
     /// Cria um cliente com atributo nome
     /// </summary>
-    public class Cliente{
+    public class Cliente : IUsuario{
         private string nome;
         public string Nome{
-            get{return nome;}
+            get => nome;
             set{if(!string.IsNullOrWhiteSpace(value)){
                 nome = value;
                 }
