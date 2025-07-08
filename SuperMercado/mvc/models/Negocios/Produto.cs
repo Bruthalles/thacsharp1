@@ -1,28 +1,77 @@
-﻿namespace absProduto{
+﻿namespace models.Negocios{
     public class Produto{
-        private string nome;
-        private decimal preco;
-        private DateTime validade;
-        private string validadeString;
-        private int quantidade;
+        private string _nome;
+        private decimal _preco;
+        private string _validadeString;
+        private int _quantidade;
 
-        public string Nome{
-            get{return Nome;}
-            set{if(!string.IsNullOrEmpty(value)){
-                    Nome = value;
-                }
-                Console.WriteLine("Nome não pode ser nulo");
+        public string Nome { 
+            get=>_nome; 
+            set {_nome = value;}
+        }
+        public decimal Preco{
+            get => _preco;
+            set{_preco = value;}
+        }
+
+        public string Validade{
+            get => _validadeString;
+            set{_validadeString = value;}
+        }
+
+        public int Quantidade{
+            get => _quantidade;
+            set{_quantidade = value;}
+        }
+
+        //metodos validados
+        public bool DefinirNome(string nome){
+            
+            if(string.IsNullOrEmpty(nome)){
+                Console.WriteLine("Nome nao pode ser nulo!");
+                return false;
+            }
+            else{
+                this.Nome = nome;
+                return true;
             }
         }
-        public double Preco{
-            get{return Math.Round(Preco,2);}
-            set{Preco = value;}
+
+        public bool DefinirPreco(decimal valor){
+            
+            if(!decimal.IsNegative(valor)){
+                valor = Math.Round(valor,2);
+                this.Preco = valor;
+                return true;
+            }
+            else{
+                Console.WriteLine("Valor inválido. Deve ser maior ou igual a 0");
+                return false;
+            }
         }
-        public string getValidade(int ano,int mes , int dia){
-            validade = new DateTime(ano,mes,dia);
-            validadeString = Convert.ToString(validade);
-            return validadeString;
+
+        public bool DefinirValidade(string validade){
+            if(DateTime.TryParse(validade, out DateTime dataConvertida)){
+               
+                this.Validade = Convert.ToString(dataConvertida);
+                return true;
+            }
+            else{
+                Console.WriteLine("Nao foi possivel trabalhar com essa data");
+                return false;
+
+            }
         }
-        public int Quantidade{get;set;}
+    
+        public bool DefinirQuantidade(int quantidade){
+            if(quantidade >= 0){
+                this.Quantidade = quantidade;
+                return true;
+            }
+            else {
+                Console.WriteLine("Quantidade inválida!");
+                return false;
+            }
+        }
     }
 }
