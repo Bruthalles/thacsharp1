@@ -13,11 +13,12 @@ namespace centralCadastro{
 
             switch(choose){
                 case '1': 
-                    Cadastrar.newGerente();
-                    Cadastrar.newProduto();
+                    CadastrarGerente.newGerente();
+                    CadastrarProduto.newProduto();
                     break;
                 case '2':
-                    Cadastrar.newCliente();
+                    CadastrarCliente.newCliente();
+                    CadastrarVenda.Comprar();
                     break;
                 default:
                     WriteLine("Opção inválida");

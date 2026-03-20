@@ -37,16 +37,16 @@ namespace ManipuladorArquivos{
     /// <param name="nomeArquivo">nome do arquivo para criar</param>
     /// <param name="conteudo">objetos convertidos para lista que salva no json</param>
     
-    public static void CriarArquivo(string nomeArquivo, List<string> conteudo){
+    public static void CriarArquivo(string nomeArquivo, string conteudo){
             
         // Monta o caminho até um arquivo .json
         caminhoArquivo = Path.Combine(raizProjeto!, nomeArquivo);
 
         try{
-            using(StreamWriter writer = new StreamWriter(caminhoArquivo,append:true)){
-                foreach(var item in conteudo){
-                writer.WriteLine(item);
-                }
+            using(StreamWriter writer = new StreamWriter(caminhoArquivo)){
+                
+                writer.WriteLine(conteudo);
+                
                 }
                 Console.WriteLine($"Arquivo e conteudo salvo com sucesso em {caminhoArquivo}");
             }

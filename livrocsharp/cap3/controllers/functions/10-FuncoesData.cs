@@ -6,15 +6,14 @@ using System.Net.Mail;
 using System.Globalization;
 
 namespace funcDates{
+
     public static class DatesClass{
+   
         public static DateTime dtFesta = new DateTime(2021,12,3);
-
         public static DateTime dtAniversario = new DateTime(ano,mes,dia);
-
         public static DateTime hoje ;
-
         public static DateTime dataHora;
-
+        
         public static void fDates(){
             WriteLine("-----funções de datas-----");
             WriteLine($"Aniversario: {dtAniversario}");
@@ -34,7 +33,7 @@ namespace funcDates{
 
             WriteLine($"Dia: {dataHora.Day}");
             WriteLine($"Mês: {dataHora.Month}");
-            WriteLine($"Ano: {dataHora.Year}");
+            WriteLine($"Ano: {dataHora.Year}");   
         }
     }
 }

@@ -1,7 +1,16 @@
 using static System.Console;
 
 namespace Calculadora{
+
+    /// <summary>
+    /// Calculadora com métodos básicos, trigonométricos e raiz quadrada
+    /// </summary>
     public static class Calc{
+        /// <summary>
+        /// a + b
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
         public static void Somar(double a, double b){
             double sum = a + b;
             WriteLine($"Resultado de {a} + {b} = {sum}");

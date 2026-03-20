@@ -12,6 +12,8 @@ namespace program{
         public static string[] linhas;
         public static void Main(string[] args){
 
+            //Manipulando pilhas, filas e dicionarios
+
             Queue<int> fila = new Queue<int>();
             Stack<int> pilha = new Stack<int>();
 
@@ -29,6 +31,15 @@ namespace program{
             estados.Remove(55);
             estados.ContainsKey(22);
             estados.ContainsValue("RJ");
+
+            //Utilizando tuplas
+            (int id, string nome, string sobrenome) tupla = (1,"thalles","brumatti");
+            WriteLine($"Id: {tupla.id}");
+            WriteLine($"Nome: {tupla.nome}");
+            WriteLine($"Sobrenome: {tupla.sobrenome}");
+
+
+            //fazendo leitura de arquivo
 
             try{
                 caminhoFinal = ObterCaminhoArquivoDoFilhoCompleto(nomePai:"/files/",nomeArquivo:"textoleitura.txt");

@@ -34,7 +34,7 @@ namespace dia3{
 
             //remove todos que começa com A
             nomes.RemoveAll(input => input.StartsWith("A",StringComparison.OrdinalIgnoreCase));
-
+            
             WriteLine(string.Join(", ",nomes));
 
             do{

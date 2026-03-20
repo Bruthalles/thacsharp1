@@ -43,6 +43,10 @@ namespace dia1{
                 }
             }
             static void Main(string[] args){
+
+                int numero = 18;
+                if (numero <= 18) WriteLine("\nprimeiro teste, menor ou igual a 18");
+                else if (numero >=18) WriteLine("\nsegundo teste, maior ou igual a 18");
             
             WriteLine("Digite seu nome completo com espaços no começo e no fim: ");
 

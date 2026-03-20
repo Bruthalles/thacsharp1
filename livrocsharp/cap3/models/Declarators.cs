@@ -2,15 +2,13 @@ namespace vars{
     public static class Contents{
 
         //strings: 
-        public static string? nome = "      thalles        ";
-        public static string? sobrenome = "     roberto    ";
-        public static string? fullName = nome + sobrenome;
-        public static string? fullName_trim = fullName.Trim();
-
-        public static string? empresa = "Microsoft Corporation";
-
-        public static string? nomeUpper = "AIRTON SENNA";
-        public static string? nomeLower = "airton senna";
+        public static string nome = "      thalles        ";
+        public static string sobrenome = "     roberto    ";
+        public static string fullName = nome + sobrenome;
+        public static string fullName_trim = fullName.Trim();
+        public static string empresa = "Microsoft Corporation";
+        public static string nomeUpper = "AIRTON SENNA";
+        public static string nomeLower = "airton senna";
 
         // vetores:
         public static string[] list_nomes = { "Silvio Santos", "José Bezerra", "Getúlio Vargas" };

@@ -8,7 +8,7 @@ namespace dia7{
             double c = 0;
             double d = 010.100;
             double e = 30;
-
+            
             Somar(a,b);
             Subtrair(d,a);
             Multiplicar(b,d);
