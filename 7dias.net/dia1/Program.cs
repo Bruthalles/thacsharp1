@@ -25,11 +25,12 @@ namespace dia1{
                 WriteLine($"Em maiúsculo: {nome.ToUpper()}");
             }
             static void Estatisticas(string nome){
+                string limpo = nome.Trim();
                 WriteLine($"Quantidade original: {nome.Length} caracteres");
-                WriteLine($"Quantidade depois do Trim: {nome.Trim().Length}");
+                WriteLine($"Quantidade depois do Trim: {limpo.Length}");
                 if(nome.Length > 0){
-                WriteLine($"Primeira letra é:'{nome[0]}'");
-                WriteLine($"Ultima letra é: '{nome[nome.Length-1]}'");
+                WriteLine($"Primeira letra é:'{limpo[0]}'");
+                WriteLine($"Ultima letra é: '{limpo[limpo.Length-1]}'");
                 }
             }
             static bool CcontemLetraA(string nome){
