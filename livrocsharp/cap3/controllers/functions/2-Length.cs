@@ -1,6 +1,6 @@
 using static System.Console;
 using static vars.Contents;
-namespace funclength{
+namespace functions{
     class LengClass{
         public static void fLength(){
             WriteLine("\nLength retorna a quantidade de caracteres\n");

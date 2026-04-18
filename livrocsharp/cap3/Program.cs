@@ -1,14 +1,6 @@
 ﻿using System.Globalization;
 using static System.Console;
-using functrim;
-using funclength;
-using funcUpLow;
-using funcRemove;
-using funcReplace;
-using funcSplit;
-using funcSubstring;
-using funcNullEmpty;
-using funcDates;
+using functions;
 
 namespace cap3{
     class Program{

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Mail;
 using System.Globalization;
 
-namespace funcDates{
+namespace functions{
 
     public static class DatesClass{
    

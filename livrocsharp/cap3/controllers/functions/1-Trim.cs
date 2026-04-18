@@ -1,6 +1,6 @@
 using static System.Console;
 using static vars.Contents;
-namespace functrim{
+namespace functions{
     
     public static class TrimClass{
         

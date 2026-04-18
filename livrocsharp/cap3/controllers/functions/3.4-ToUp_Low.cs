@@ -1,7 +1,7 @@
 using static System.Console;
 using static vars.Contents;
 
-namespace funcUpLow{
+namespace functions{
     public static class UpLowClass{
         public static void fUpLow(){
              WriteLine($"Comparando strings: ({nomeUpper}) e ({nomeLower})");

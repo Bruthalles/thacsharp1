@@ -1,7 +1,7 @@
 using static System.Console;
 using static vars.Contents;
 
-namespace funcReplace{
+namespace functions{
     public static class ReplaceClass{
         public static void fReplace(){
             WriteLine("\nReplace substitui conteúdos da string\n");

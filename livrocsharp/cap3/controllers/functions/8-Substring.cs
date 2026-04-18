@@ -1,7 +1,7 @@
 using static System.Console;
 using static vars.Contents;
 
-namespace funcSubstring{
+namespace functions{
     public static class SubstringClass{
         public static void fSubstring(){
             WriteLine("\nSubstring extrai parte da string\n");

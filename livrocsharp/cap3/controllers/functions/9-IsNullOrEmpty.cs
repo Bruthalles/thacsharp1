@@ -1,7 +1,7 @@
 using static System.Console;
 using static vars.Contents;
 
-namespace funcNullEmpty{
+namespace functions{
     public static class NullEmptyClass{
         public static void fNullEmpty(){
             WriteLine("\nIsNullOrEmpty verifica se a string é nula ou vazia.\n");

@@ -1,7 +1,7 @@
 using static System.Console;
 using static vars.Contents;
 
-namespace funcRemove{
+namespace functions{
     public static class RemoveClass{
         public static void fRemove(){
              WriteLine("\nRemove - extrai x caracteres a partir da esquerda da string\n");
