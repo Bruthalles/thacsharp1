@@ -23,7 +23,7 @@ namespace Mercado.Controllers.Cadastros{
             lstAdmin.Add(jsonGerente);
 
             string arquivoGerentes = ObterCaminhoArquivoDoFilhoCompleto("/mvc/models/data/","gerentes.json");
-            CriarArquivo(arquivoGerentes,lstAdmin);
+            CriarArquivo(arquivoGerentes,lstAdmin.ToString());
         }
     }
 }

@@ -6,7 +6,7 @@ namespace models.Negocios{
         private string nome;
         public string Nome{
             get => nome;
-            set{if(!string.IsNullOrWhiteSpace(value)){
+            set{if(!string.IsNullOrEmpty(value)){
                 nome = value;
                 }
                 Console.WriteLine("Nome não pode ser nulo");

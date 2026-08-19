@@ -22,11 +22,11 @@ namespace dia3{
             string input = ReadLine().ToLower();
 
             do {
+                if(input == "sair")break;
                 nomes.Add(input);
                 WriteLine($"\nDigite um nome ou sair para finalizar: ");
                 input = ReadLine();
 
-                if(input == "sair")break;
             }while(true);
 
             WriteLine(string.Join(", ",nomes));

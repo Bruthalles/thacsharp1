@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "+XeYtxYaB10=",
+  "dgSpecHash": "4M7BwpGfP6E=",
   "success": true,
   "projectFilePath": "/home/thalles/repositories/thacsharp1/7dias.net/7dias.net.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "/home/thalles/.nuget/packages/microsoft.netcore.app.ref/9.0.15/microsoft.netcore.app.ref.9.0.15.nupkg.sha512",
+    "/home/thalles/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.15/microsoft.aspnetcore.app.ref.9.0.15.nupkg.sha512",
+    "/home/thalles/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.15/microsoft.netcore.app.host.linux-x64.9.0.15.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Ocorreu um erro ao obter os dados de vulnerabilidade do pacote: Não é possível carregar o índice de serviço para a origem https://api.nuget.org/v3/index.json.",
+      "projectPath": "/home/thalles/repositories/thacsharp1/7dias.net/7dias.net.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/thalles/repositories/thacsharp1/7dias.net/7dias.net.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

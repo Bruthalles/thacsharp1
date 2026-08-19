@@ -34,13 +34,13 @@ namespace Mercado.Controllers.Cadastros{
                 
                 if(!produto.DefinirQuantidade(int.Parse(ReadLine()))) continue;
                 
-                string json = JsonSerializer.Serialize(produto);
-                estoque.Add(json);
+                string jsonProduto = JsonSerializer.Serialize(produto);
+                estoque.Add(jsonProduto);
                 }
 
             }while(true);
             string arquivoProdutos = ObterCaminhoArquivoDoFilhoCompleto("/mvc/models/data/","estoque.json");
-            CriarArquivo(arquivoProdutos,estoque);
+            CriarArquivo(arquivoProdutos,estoque.ToString());
 
         }
     }

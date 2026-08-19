@@ -27,6 +27,8 @@ class Produto{
 class Cadastrar{
     + Produto(){CriarJson()}
     + Cliente(){CriarJson()}
+    + Gerente(){CriarJson()}
+    + DataBase(Gerente,Cliente,Produto){CriarJson()}
 
 }
 

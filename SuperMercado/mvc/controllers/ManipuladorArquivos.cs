@@ -1,4 +1,4 @@
-
+using System.Text.Json;
 namespace ManipuladorArquivos{
     public static class ManipuladorArquivos{
 
@@ -45,7 +45,7 @@ namespace ManipuladorArquivos{
         try{
             using(StreamWriter writer = new StreamWriter(caminhoArquivo)){
                 
-                writer.WriteLine(conteudo);
+                writer.WriteLine(JsonSerializer.Serialize(conteudo));
                 
                 }
                 Console.WriteLine($"Arquivo e conteudo salvo com sucesso em {caminhoArquivo}");
