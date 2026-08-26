@@ -18,19 +18,52 @@
 
 
 using static System.Console;
+using heroclass;
 WriteLine("Hello, Hero!");
 
-string heroi = "Cavaleiro Solar";
-int xp = 5000;
-string nivel = "";
+void Ranks(){
 
-if(xp < 1000) nivel = "Ferro";
-else if (xp >= 1000 && xp < 2000) nivel = "Bronze";
-else if (xp >= 2000 && xp < 5000) nivel = "Prata";
-else if (xp >= 5000 && xp < 7000) nivel = "Ouro";
-else if (xp >= 7000 && xp < 8000) nivel = "Platina";
-else if (xp >= 8000 && xp < 9000) nivel = "Ascendente";
-else if (xp >= 9000 && xp < 10000) nivel = "Imortal";
-else if (xp > 10000) nivel = "Radiante";
+    string heroi = "Cavaleiro Solar";
+    int xp = 5000;
+    string nivel = "";
 
-WriteLine($"O Heroi {heroi} está no nivel de {nivel}");
+    if(xp < 1000) nivel = "Ferro";
+    else if (xp >= 1000 && xp < 2000) nivel = "Bronze";
+    else if (xp >= 2000 && xp < 5000) nivel = "Prata";
+    else if (xp >= 5000 && xp < 7000) nivel = "Ouro";
+    else if (xp >= 7000 && xp < 8000) nivel = "Platina";
+    else if (xp >= 8000 && xp < 9000) nivel = "Ascendente";
+    else if (xp >= 9000 && xp < 10000) nivel = "Imortal";
+    else if (xp > 10000) nivel = "Radiante";
+
+    WriteLine($"O Heroi {heroi} está no nivel de {nivel}");
+
+}
+
+Guerreiro guerreiro = new Guerreiro();
+Mago mago = new Mago();
+Monge monge = new Monge();
+Ninja ninja = new Ninja();
+
+WriteLine("Guerreiro: 1");
+WriteLine("Mago: 2");
+WriteLine("Monge: 3");
+WriteLine("Ninja: 4");
+
+for(int i = 0;i<4;i++){
+    Write("ESCOLHA UM NUMERO: ");
+
+    int num = Convert.ToInt32(ReadLine());
+
+    switch (num){
+        
+        case 1: guerreiro.atacar();
+        break;
+        case 2: mago.atacar();
+        break;
+        case 3: monge.atacar();
+        break;
+        case 4: ninja.atacar();
+        break;
+    }
+}
