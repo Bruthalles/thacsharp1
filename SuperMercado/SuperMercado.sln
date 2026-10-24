@@ -5,14 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMercado", "SuperMercado.csproj", "{1A3E321B-CF61-4B7D-92C5-BFAFD9B9023C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mvc", "mvc", "{CB69B98E-96E7-C360-5784-DBE29CFD4E36}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{523DDEFA-E856-41E1-6C9D-E2C6ECE86AAD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocios", "mvc\models\Negocios\Negocios.csproj", "{CBC8C66C-6C95-4D08-8C97-FC49F1FACE7E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controllers", "mvc\controllers\controllers.csproj", "{7BD2E4D3-E38C-4043-9F44-C8B32F2F9713}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

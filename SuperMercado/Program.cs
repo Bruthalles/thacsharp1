@@ -1,11 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using centralCadastro;
-using models.Negocios;
-namespace Mercado{
-    class PRogram{
-        static void Main(string[] args){
-            Central.Print();
-            DataBase.CarregarDados();
-        }
+﻿using static System.Console;
+using Newtonsoft.Json;
+using SuperMercado;
+public class Program{
+
+    public static void Main(){
+
+       Cadastro.CadastrarUsuarios();
     }
 }
+

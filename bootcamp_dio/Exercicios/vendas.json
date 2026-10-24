@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "Produto": "cadeira gamer",
+    "Preco": 350.50
+  },
+  {
+    "Id": 2,
+    "Produto": "Microondas",
+    "Preco": 250.99
+  },
+  {
+    "Id": 3,
+    "Produto": "PC GAymer",
+    "Preco": 2789.98
+  },
+  {
+    "Id": 7,
+    "Produto": "robozao",
+    "Preco": 99.999
+  },
+  {
+    "Id": 123,
+    "Produto": "Carro Elétrico",
+    "Preco": 789.590
+  },
+  {
+    "Id": 256,
+    "Produto": "Copo Térmico",
+    "Preco": 256.404
+  }
+]
+[
+  {
+    "Id": 2018,
+    "Produto": "Brawl Stars",
+    "Preco": 2026.456
+  },
+  {
+    "Id": 18,
+    "Produto": "Iphone 18 Pro Max Orange",
+    "Preco": 22.000
+  }
+]

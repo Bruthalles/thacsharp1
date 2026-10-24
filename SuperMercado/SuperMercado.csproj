@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="mvc\controllers\controllers.csproj" />
-    <ProjectReference Include="mvc\models\Negocios\Negocios.csproj" />
-    <Compile Remove="mvc/models/Negocios/**/*.cs" />
-    <Compile Remove="mvc/controllers/**/*.cs" />
+   
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
   <PropertyGroup>
